@@ -21,7 +21,9 @@ public class DrishtiController {
 
     public void registerUnderFive(UnderFiveRegistrationInformation childInformation) {
         logger.info("Child Registration: " + childInformation);
-        System.out.println("Hello World");
     }
 
+    public void registerPregnancy(PregnancyRegistrationInformation pregnancyInformation) {
+        logger.info("Pregnancy Registration: " + pregnancyInformation);
+    }
 }

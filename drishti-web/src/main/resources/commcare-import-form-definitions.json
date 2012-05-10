@@ -20,13 +20,44 @@
                         "form|first_name": "firstname",
                         "form|surname": "lastname",
                         "form|mothers_health_id": "mother_healthid",
-                        "form|household_head_id": "household_healthid",
+                        "form|household_head_id": "householdhealthid",
                         "form|location_code": "locationcode",
-                        "form|delivered_in_facility": "clinic_delivery"
+                        "form|delivered_in_facility": "clinicdelivery"
+                    }
+               }
+            ]
+        },
+        {
+            "forms": [
+                {
+                    "name": "registerPregnancy",
+                    "url": {
+                        "base": "https://www.commcarehq.org/a/mvp/reports/export/",
+                        "queryParams": {
+                            "nameSpace": "http://openrosa.org/formdesigner/882FC273-E436-4BA1-B8CC-9CA526FFF8C2"
+                        }
+                    },
+                    "mappings": {
+                        "form|case|case_id": "caseId",
+                        "form|health_id": "healthID",
+                        "form|first_name": "firstname",
+                        "form|surname": "lastname",
+                        "form|dob": "dob",
+                        "form|dob_calc": "age",
+                        "form|dob_known": "estimatedDob",
+                        "form|edd": "expecteddeliverydate",
+                        "form|edd_calc": "estimatedeliverydate",
+                        "form|edd_known": "eddknown",
+                        "form|lmp": "lmp",      
+                        "form|lmp_known": "lmpknown",                          
+                        "form|location_code": "locationcode",                          
+                        "form|mobile_phone_number": "mobile",
+                        "form|household_head_health_id": "householdhealthid"
                     }
                 }
             ]
         }
+        
    ]
 }
 
